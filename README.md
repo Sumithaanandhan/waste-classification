@@ -19,6 +19,24 @@ The aim is to support **sustainable waste management** by automating waste segre
 - Created train-validation split for CNN training (to be done in Week 2)
 - Documented all steps in a Jupyter Notebook
 
+## 🗓️ Week 2 - Model Building & Training
+
+### ✅ Tasks Completed
+- Built a CNN model using TensorFlow/Keras
+- Trained it on 10 waste categories
+- Evaluated validation accuracy and visualized learning curves
+- Saved trained model for reuse
+- Updated repository with new notebook
+
+---
+
+### 🔧 Improvisations & Enhancements (Week 2)
+- Tuned CNN architecture for better accuracy
+- Added dropout layer to reduce overfitting
+- Visualized both training and validation accuracy/loss
+- Cleaned dataset pipeline for efficiency
+
+
 ---
 
 ## 📂 Folder Structure
