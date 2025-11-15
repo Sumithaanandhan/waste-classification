@@ -1,24 +1,24 @@
 🌟 Waste Classification using CNN + Streamlit
 
-A Deep Learning–based waste classification system that identifies images of waste into 10 categories using a trained Convolutional Neural Network (CNN) and provides a web-based interface using Streamlit.
+A Deep Learning–based waste classification system that identifies images of waste into 10 categories using a trained Convolutional Neural Network (CNN) and provides an interactive Streamlit web interface.
 
-This project aims to support sustainable waste management by automating waste segregation, making recycling more efficient and accurate.
+This project supports sustainable waste management by automating waste segregation and making recycling more efficient.
 
 📌 Project Goals
 
 Build a CNN to classify types of waste
 
-Improve accuracy using data augmentation & deeper model
+Improve accuracy using data augmentation and deeper models
 
 Deploy the trained model using Streamlit
 
-Provide an easy-to-use UI for real-world testing
+Provide an easy-to-use UI for real-time testing
 
-Support sustainability through AI-driven waste management
+Support sustainability through AI-based waste segregation
 
 🗂️ Waste Categories
 
-The system classifies images into the following 10 classes:
+The system classifies waste into 10 classes:
 
 battery
 
@@ -54,18 +54,18 @@ Displayed sample images
 
 Resized all images to 64×64 for memory efficiency
 
-Normalized image pixel values
+Normalized pixel values
 
-Created train-validation split
+Created a train-validation split
 
-Documented all analysis in week1_data_exploration.ipynb
+Documented all work in week1_data_exploration.ipynb
 
 🗓️ Week 2 — Base CNN Model Building & Training
 ✅ Tasks Completed
 
 Built a simple CNN using TensorFlow/Keras
 
-Trained on 10 image classes
+Trained model on all 10 waste classes
 
 Achieved ~58% validation accuracy
 
@@ -73,17 +73,17 @@ Plotted accuracy & loss graphs
 
 Saved the trained model
 
-Notebook updated: week2_cnn_training.ipynb
+Updated notebook: week2_cnn_training.ipynb
 
 🔧 Improvements (Week 2)
 
-Added dropout layer to prevent overfitting
+Added dropout layer to reduce overfitting
 
-Cleaned the data pipeline
+Cleaned and optimized data pipeline
 
-Better visualization of training curves
+Improved visualization (accuracy/loss curves)
 
-Improved model structuring and documentation
+Enhanced model structure and comments
 
 🗓️ Week 3 — Model Improvement + Deployment
 🎯 Improvements Applied
@@ -92,32 +92,34 @@ Added data augmentation
 
 Built a deeper CNN with BatchNormalization
 
-Trained for more epochs with callbacks
+Trained longer with callbacks
 
-Saved the best model as waste_classifier_model.h5
+Saved best model as waste_classifier_model.h5
 
-Created a full Streamlit web app to classify waste
+Created a full Streamlit web app
 
-Designed a clean UI for professional usage
+Designed a clean, professional UI
 
-Documented everything in week3_model_improvement.ipynb
+All improvements documented in week3_model_improvement.ipynb
 
 🖥️ Streamlit App Features
 
-Upload any waste image (JPG/PNG)
+Upload image (JPG/PNG)
 
-App predicts the waste category
+Predict waste class instantly
 
-Displays confidence percentage
+Show confidence percentage
 
-Runs locally using Streamlit
+Clean and simple UI
+
+Runs locally with Streamlit
 
 🧪 How to Run This Project
 1️⃣ Clone the Repository
 git clone https://github.com/<your-username>/waste-classification.git
 cd waste-classification
 
-2️⃣ Create and Activate Virtual Environment (Recommended)
+2️⃣ Create & Activate Virtual Environment (Recommended)
 Windows
 python -m venv venv
 .\venv\Scripts\activate
@@ -133,9 +135,9 @@ pip install -r requirements.txt
 streamlit run streamlit_app/app.py
 
 
-Streamlit will open in your browser at:
+The app will open at:
 
-http://localhost:8501
+👉 http://localhost:8501
 
 📁 Project Folder Structure
 waste-classification/
@@ -156,7 +158,8 @@ waste-classification/
 └── .gitignore
 
 
-⚠️ The dataset folder garbage-dataset/ is NOT uploaded to GitHub because it is too large.
+⚠️ Note:
+The garbage-dataset/ folder is not uploaded to GitHub due to size limitations.
 
 🧰 Tools & Technologies Used
 
@@ -179,9 +182,9 @@ Jupyter Notebook
 📊 Results
 
 ✔ Working CNN waste classifier
-✔ Deployed using Streamlit
+✔ Streamlit deployment completed
 ✔ Improved accuracy using augmentation
-✔ Clean, simple UI for final presentation
+✔ Clean UI for demonstration
 
 ✍️ Author
 
