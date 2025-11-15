@@ -1,83 +1,168 @@
-# Waste Classification using CNN
+🌟 Waste Classification using CNN + Streamlit
 
-## 🌱 Project Overview
-This project applies **Deep Learning (Convolutional Neural Networks - CNNs)** to classify waste images into different categories such as plastic, paper, glass, metal, and more.  
-The aim is to support **sustainable waste management** by automating waste segregation using AI.
+A Deep Learning–based waste classification system that identifies images of waste into 10 categories using a trained Convolutional Neural Network (CNN) and provides a web-based interface using Streamlit.
 
----
+This project aims to support sustainable waste management by automating waste segregation, making recycling more efficient and accurate.
 
-## 🗓️ Week 1 - Data Exploration & Preprocessing
+📌 Project Goals
 
-### ✅ Tasks Completed
-- Collected local dataset named **`garbage-dataset`** containing 10 categories:
-  - `battery`, `biological`, `cardboard`, `clothes`, `glass`, `metal`, `paper`, `plastic`, `shoes`, `trash`
-- Verified dataset folder structure and class names
-- Counted total images per category
-- Displayed sample images for each class
-- Checked image dimensions and consistency
-- Created a preprocessing function (resize + normalize)
-- Created train-validation split for CNN training (to be done in Week 2)
-- Documented all steps in a Jupyter Notebook
+Build a CNN to classify types of waste
 
-## 🗓️ Week 2 - Model Building & Training
+Improve accuracy using data augmentation & deeper model
 
-### ✅ Tasks Completed
-- Built a CNN model using TensorFlow/Keras
-- Trained it on 10 waste categories
-- Evaluated validation accuracy and visualized learning curves
-- Saved trained model for reuse
-- Updated repository with new notebook
+Deploy the trained model using Streamlit
 
----
+Provide an easy-to-use UI for real-world testing
 
-### 🔧 Improvisations & Enhancements (Week 2)
-- Tuned CNN architecture for better accuracy
-- Added dropout layer to reduce overfitting
-- Visualized both training and validation accuracy/loss
-- Cleaned dataset pipeline for efficiency
+Support sustainability through AI-driven waste management
+
+🗂️ Waste Categories
+
+The system classifies images into the following 10 classes:
+
+battery
+
+biological
+
+cardboard
+
+clothes
+
+glass
+
+metal
+
+paper
+
+plastic
+
+shoes
+
+trash
+
+🗓️ Week-Wise Progress
+🗓️ Week 1 — Data Exploration & Preprocessing
+✅ Tasks Completed
+
+Loaded the local dataset garbage-dataset
+
+Verified folder structure and class names
+
+Counted number of images in each class
+
+Displayed sample images
+
+Resized all images to 64×64 for memory efficiency
+
+Normalized image pixel values
+
+Created train-validation split
+
+Documented all analysis in week1_data_exploration.ipynb
+
+🗓️ Week 2 — Base CNN Model Building & Training
+✅ Tasks Completed
+
+Built a simple CNN using TensorFlow/Keras
+
+Trained on 10 image classes
+
+Achieved ~58% validation accuracy
+
+Plotted accuracy & loss graphs
+
+Saved the trained model
+
+Notebook updated: week2_cnn_training.ipynb
+
+🔧 Improvements (Week 2)
+
+Added dropout layer to prevent overfitting
+
+Cleaned the data pipeline
+
+Better visualization of training curves
+
+Improved model structuring and documentation
+
+🗓️ Week 3 — Model Improvement + Deployment
+🎯 Improvements Applied
+
+Added data augmentation
+
+Built a deeper CNN with BatchNormalization
+
+Trained for more epochs with callbacks
+
+Saved the best model as waste_classifier_model.h5
+
+Created a full Streamlit web app to classify waste
+
+Designed a clean UI for professional usage
+
+Documented everything in week3_model_improvement.ipynb
+
+🖥️ Streamlit App Features
+
+Upload any waste image (JPG/PNG)
+
+App predicts the waste category
+
+Displays confidence percentage
+
+Runs locally using Streamlit
+
+🧪 How to Run This Project
+1️⃣ Clone the Repository
+git clone https://github.com/<your-username>/waste-classification.git
+cd waste-classification
+
+2️⃣ Create and Activate Virtual Environment (Recommended)
+Windows
+python -m venv venv
+.\venv\Scripts\activate
+
+Mac/Linux
+python3 -m venv venv
+source venv/bin/activate
+
+3️⃣ Install Required Libraries
+pip install -r requirements.txt
+
+4️⃣ Run Streamlit App
+streamlit run streamlit_app/app.py
 
 
----
+Streamlit will open in your browser at:
 
-## 📂 Folder Structure
+http://localhost:8501
+
+📁 Project Folder Structure
 waste-classification/
 │
-├── garbage-dataset/ # Local dataset (NOT uploaded to GitHub)
-│ ├── battery/
-│ ├── biological/
-│ ├── cardboard/
-│ ├── clothes/
-│ ├── glass/
-│ ├── metal/
-│ ├── paper/
-│ ├── plastic/
-│ ├── shoes/
-│ └── trash/
+├── model/
+│   └── waste_classifier_model.h5
 │
-├── week1_data_exploration.ipynb # Jupyter Notebook (Week 1 work)
-└── README.md # Project documentation
+├── streamlit_app/
+│   └── app.py
+│
+├── notebooks/
+│   ├── week1_data_exploration.ipynb
+│   ├── week2_cnn_training.ipynb
+│   └── week3_model_improvement.ipynb
+│
+├── requirements.txt
+├── README.md
+└── .gitignore
 
 
-> ⚠️ **Note:** The `garbage-dataset` folder should be kept locally — it should not be uploaded to GitHub (as it’s too large).
+⚠️ The dataset folder garbage-dataset/ is NOT uploaded to GitHub because it is too large.
 
----
+🧰 Tools & Technologies Used
 
-## 💻 How to Run This Project
-
-### 1️⃣ Install Required Libraries
-Use the following commands in your terminal or command prompt:
-```bash
-pip install numpy matplotlib opencv-python scikit-learn tensorflow keras
-2️⃣ Run Jupyter Notebook
-bash
-Copy code
-jupyter notebook
-Then open and execute the file week1_data_exploration.ipynb.
-
-🧰 Tools & Libraries Used
 Python 3.10+
 
-Jupyter Notebook
+TensorFlow / Keras
 
 OpenCV (cv2)
 
@@ -87,9 +172,18 @@ Matplotlib
 
 Scikit-learn
 
-TensorFlow / Keras (for CNN model)
+Streamlit
 
+Jupyter Notebook
+
+📊 Results
+
+✔ Working CNN waste classifier
+✔ Deployed using Streamlit
+✔ Improved accuracy using augmentation
+✔ Clean, simple UI for final presentation
 
 ✍️ Author
+
 Sumitha A
-Computer Science and Engineering Student
+CSE Student — AI/ML Virtual Internship
